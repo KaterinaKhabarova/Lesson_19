@@ -790,6 +790,10 @@ button {
   .black-block__content:not(:last-child) {
     margin-right: 100px;
   }
+
+  .white-block {
+    padding: 97px 40px 0px 140px;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -834,10 +838,6 @@ button {
 }
 
 @media (max-width: 1150px) {
-  .white-block {
-    padding: 50px 0px 50px 50px;
-  }
-
   .white-block__banner:not(:last-child) {
     margin-right: 0px;
   }
@@ -1069,13 +1069,6 @@ button {
     font-size: 36px;
   }
 
-  .white-block {
-    padding: 50px 0px 50px 50px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-
   .white-block__title {
     font-size: 36px;
   }
@@ -1128,11 +1121,11 @@ button {
 
 @media (max-width: 500px) {
   .black-block {
-    padding: 50px 0px 50px 15px;
+    padding: 50px 10px 50px 7px;
   }
 
   .white-block {
-    padding: 50px 0px 50px 10px;
+    padding: 50px 10px 50px 7px;
   }
 
   .white-block__content {
@@ -1182,6 +1175,7 @@ button {
 
   .black-block__text {
     font-size: 16px;
+    max-width: 380px;
   }
 
   .black-block__image_first {
@@ -1197,6 +1191,11 @@ button {
   .white-block__image {
     max-width: 290px;
     max-height: 300px;
+  }
+
+  .white-block__content {
+    font-size: 16px;
+    max-width: 360px;
   }
 
   .white-block__title {
@@ -1234,9 +1233,40 @@ button {
             flex-direction: column;
     row-gap: 5px;
   }
+
+  .rewiew {
+    padding: 43px 20px 43px 10px;
+  }
+
+  .rewiew__container {
+    padding: 30px 5px 20px 10px;
+  }
+
+  .rewiew__img {
+    display: none;
+  }
+
+  .rewiew__text {
+    max-width: 310px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .black-block__content {
+    padding: 0px 8px 50px 8px;
+  }
 }
 
 @media (max-width: 380px) {
+  .black-block__text {
+    max-width: 280px;
+  }
+
+  .white-block__content {
+    max-width: 300px;
+  }
+
   .footer-bottom__input-part {
     min-width: 150px;
   }
@@ -1252,13 +1282,5 @@ button {
 @media (max-width: 350px) {
   .header {
     padding: 20px 20px;
-  }
-
-  .black-block__text {
-    max-width: 290px;
-  }
-
-  .white-block__content {
-    max-width: 290px;
   }
 }
